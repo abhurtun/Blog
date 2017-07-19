@@ -2,3 +2,4 @@ theme: jekyll-theme-cayman
 title: Arvin Bhurtun
 gems:
   - jemoji
+logo: /img/logo.png
