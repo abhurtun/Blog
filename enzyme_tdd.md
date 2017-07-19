@@ -28,11 +28,11 @@ _“Enzyme is a JavaScript Testing utility for React that makes it easier to ass
 
 ## Getting Started
 
-Let’s start a project from scratch by creating a clean `npm` package by running `npm init -y`.
+Let’s start a project from scratch by downloading and installing the latest version of [node](https://nodejs.org/en/download/).
 
-The structure for this project will be the usual application structure: our code will live in the `src` folder and our tests will live under the `test` folder. Setting up our structure, then:
+The structure for this project will be the usual application structure: project in a folder of your choice, our code will live in the `src` folder and our tests will live under the `test` folder. Setting up our structure, then:
 
-`mkdir src dist test`
+`mkdir src test`
 
 And our initial files:
 
@@ -61,7 +61,7 @@ This ensures Babel knows how to handle JSX and the ES2015 syntax we’re writing
 
 Let’s grab our testing libraries first. We’ll be using **Mocha** as our test runner, **Chai** as our expectation library, **Sinon** for creating stubs and mocks whenever necessary, and **Enzyme** as a helper library for testing React Components. We’ll go over Enzyme a bit later on, after we set our testing environment up. For now, grab those testing dependencies:
 
-`npm i mocha chai sinon enzyme react-addons-test-utils --save-dev`
+`npm i mocha chai sinon jsdom enzyme react-addons-test-utils  --save-dev`
 
 ## Setting up the testing framework
 
@@ -119,12 +119,6 @@ And `test/dom.js` will have our mocked DOM:
     global.navigator = {
       userAgent: 'node.js'
     };
-
-Run the below to ensure you have all the packages installed:
-
-```
-npm install
-```
 
 ## Writing our first test
 

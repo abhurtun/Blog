@@ -1,7 +1,7 @@
 ## Welcome to my blog
 
 Hope you enjoy your read.
-Dont be afraid to fail!!!
+Dont be afraid to faill!!!
 
 ### Table of contents
 
