@@ -6,6 +6,17 @@ date: 17/07/2017
 author: Arvin bhurtun
 ---
 
+#React + enzyme + Mocha TDD
+
+<span class="reading-time" title="Estimated read time">
+  {% assign words = content | number_of_words %}
+  {% if words < 360 %}
+    1 min
+  {% else %}
+    {{ words | divided_by:180 }} mins
+  {% endif %}
+</span>
+
 ### Test Driven Development in an insane JS world
 
 _With the current state of front-end web development, it’s easy to get lost in a sea of options when it comes to choosing a stack to develop with. The same goes for setting up a **test environment**; depending on which frameworks you’re using, you might be inclined to use different libraries and test runners to better suit the application workflow and logic._
