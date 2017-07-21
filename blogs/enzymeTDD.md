@@ -7,6 +7,7 @@ author: Arvin bhurtun
 ---
 
 # React + enzyme + Mocha TDD
+July 17, 2017 15 minute read
 
 ### Test Driven Development in an insane JS world
 
