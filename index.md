@@ -8,10 +8,9 @@ Dont be afraid to faill!!!
 
 ### Table of contents
 
-1. [Quick Enzyme TDD](blogs/enzymeTDD.md)
-2. [Quick Jest TDD]()
-3. [Jest vs Mocha]()
-4. [Docker tutorial]()
+* [Quick Enzyme TDD](blogs/enzymeTDD.md)
+* [Quick Jest TDD]()
+* [Jest vs Mocha]()
+* [Docker tutorial]()
 
-{{ page.tags | sort }}
-{{ site.posts | sort}
+{{ site.posts }}
