@@ -6,7 +6,7 @@ date: 17/07/2017
 author: Arvin bhurtun
 ---
 
-#React + enzyme + Mocha TDD
+# React + enzyme + Mocha TDD
 {% include read_time.html %}
 
 ### Test Driven Development in an insane JS world
