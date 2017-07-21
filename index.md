@@ -12,5 +12,3 @@ Dont be afraid to faill!!!
 * [Quick Jest TDD]()
 * [Jest vs Mocha]()
 * [Docker tutorial]()
-
-{{ site.posts }}
