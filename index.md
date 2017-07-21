@@ -13,7 +13,5 @@ Dont be afraid to faill!!!
 3. [Jest vs Mocha]()
 4. [Docker tutorial]()
 
-  {% for post in site.posts %}
-    {{ post.date | date_to_string }} {{ post.title }}
-  {% endfor %}
-
+{{ page.tags | sort }}
+{{ site.posts | sort}
