@@ -6,7 +6,7 @@ Dont be afraid to faill!!!
 
 ### Table of contents
 
-1. [Quick Enzyme TDD](blogs/enzyme_tdd.md)
+1. [Quick Enzyme TDD](blogs/enzymeTDD.md)
 2. [Quick Jest TDD]()
 3. [Jest vs Mocha]()
 4. [Docker tutorial]()
