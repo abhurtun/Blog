@@ -1,5 +1,8 @@
 theme: jekyll-theme-cayman
 title: Arvin Bhurtun
+baseurl: "/blog"
+production_url : http://abhurtun.github.io.com/blog
+BASE_PATH : http://abhurtun.com/blog
 gems:
   - jekyll-feed
   - jekyll-mentions
