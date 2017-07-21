@@ -1,5 +1,9 @@
 theme: jekyll-theme-cayman
 title: Arvin Bhurtun
 gems:
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
   - jemoji
 logo: /img/logo.png

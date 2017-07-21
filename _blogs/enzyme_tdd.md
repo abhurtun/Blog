@@ -1,7 +1,10 @@
-# Set up a testing environment with React + enzyme + Mocha 
-
-July 19, 2017
-15 minute read
+---
+layout: default
+title: React + enzyme + Mocha TDD
+subtitle:
+date: 17/07/2017
+author: Arvin bhurtun
+---
 
 ### Test Driven Development in an insane JS world
 
