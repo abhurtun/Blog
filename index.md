@@ -14,6 +14,6 @@ Dont be afraid to faill!!!
 4. [Docker tutorial]()
 
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    {{ post.date | date_to_string }} {{ post.title }}
   {% endfor %}
 
