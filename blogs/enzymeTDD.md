@@ -7,15 +7,7 @@ author: Arvin bhurtun
 ---
 
 #React + enzyme + Mocha TDD
-
-<span class="reading-time" title="Estimated read time">
-  {% assign words = content | number_of_words %}
-  {% if words < 360 %}
-    1 min
-  {% else %}
-    {{ words | divided_by:180 }} mins
-  {% endif %}
-</span>
+{% include read_time.html %}
 
 ### Test Driven Development in an insane JS world
 
