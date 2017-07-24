@@ -10,5 +10,5 @@ Dont be afraid to fail!!!
 
 * [Quick Enzyme TDD](blogs/enzymeTDD.md)
 * [Quick Jest TDD](blogs/jestTDD.md)
-* [Jest vs Mocha](jestVSmocha.md)
+* [Jest vs Mocha](blogs/jestVSmocha.md)
 * [Docker tutorial]()
