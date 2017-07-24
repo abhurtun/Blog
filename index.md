@@ -2,13 +2,13 @@
 ## Welcome to my blog
 
 Hope you enjoy your read.
-Dont be afraid to faill!!!
+Dont be afraid to fail!!!
 
 {{ site.time | date_to_long_string }}
 
 ### Table of contents
 
 * [Quick Enzyme TDD](blogs/enzymeTDD.md)
-* [Quick Jest TDD]()
+* [Quick Jest TDD](blogs/jestTDD.md)
 * [Jest vs Mocha]()
 * [Docker tutorial]()
