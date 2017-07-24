@@ -6,6 +6,10 @@ date: 24/07/2017
 author: Arvin bhurtun
 ---
 
+# React + enzyme + Jest TDD
+
+July 24, 2017 10 minute read
+
 ### Test Driven Development in an insane JS world
 
 _With React becoming more and more popular with frontend, we will take a look at Jest using TDD approach._
