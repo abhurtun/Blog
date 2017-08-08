@@ -8,7 +8,7 @@ author: Arvin bhurtun
 
 # React + enzyme + Jest TDD
 
-{{ page.date | date_to_string }} read
+{{ page.date | date_to_string }} {% include readTime.html content=post.content %}read
 
 {% include likeButton.html %}
 
