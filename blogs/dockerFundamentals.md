@@ -14,7 +14,7 @@ author: Arvin bhurtun
 
 This tutorial will explain the fundamentals of Docker and start you with some basic usage.
 
-## What is Docker?
+### What is Docker?
 
 Docker is open source software to pack, ship and run any application as a lightweight container. Containers are completely hardware and platform independent so you don’t have to worry about whether what you are creating will run everywhere.
 
@@ -22,7 +22,7 @@ In the past virtual machines have been used to accomplish many if these same goa
 
 You might be wondering what could go into a “container”. Well, anything! You can isolate pieces of your system into separate containers. You could potentially have a container for nginx, a container for MongoDB, and one for Redis. Containers are very easy to setup. Major projects like nginx, MongoDB, and Redis all offer free Docker images for you to use; you can install and run any of these containers with just one shell command. This is much easier than using a virtual machine (even with something like Vagrant).
 
-## Installation
+### Installation
 
 Installing Docker is very easy. Visit the [official Docker installation page](https://docs.docker.com/installation/) and follow the instructions tailored for your operating system. There are simple installers for both Mac OS X and Windows.
 
@@ -38,7 +38,7 @@ If your installation worked, you will see a bunch of information about your Dock
 
 <span data-sumome-listbuilder-embed-id="87963b091ef2fe129270bee386510a6d2e648263c2e578b161541a26946b9dab"></span>
 
-## Creating Your First Docker Image
+### Creating Your First Docker Image
 
 Every Docker container is an “instance” of a Docker image. There is a [massive library of pre-built Docker images](https://hub.docker.com). However, in order to really understand Docker, you should create an image as an exercise.
 
@@ -179,7 +179,7 @@ $ docker run -d -p 6379:6379 redis
 
 That’s it! Now you have Redis up-and-running on your machine.This container/image is production ready.
 
-## Conclusion
+### Conclusion
 
 Docker is a powerful tool for creating and running distributable, lightweight applications both locally and in production.
 
