@@ -8,7 +8,7 @@ author: Arvin bhurtun
 
 # React + enzyme + Mocha TDD
 
-July 17, 2017 {% include read_time.html %}
+July 17, 2017 {% include readTime.html %}
 
 {% include likeButton.html %}
 
