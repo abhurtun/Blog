@@ -1,6 +1,14 @@
+---
+layout: default
+title: Docker Fundamentals
+subtitle:
+date: August 8, 2017
+author: Arvin bhurtun
+---
+
 # Docker Fundamentals
 
-August 8, 2017 5 minute read
+{{ page.date | date_to_string }} 5 minute read
 
 {% include likeButton.html %}
 

@@ -1,6 +1,14 @@
+---
+layout: default
+title: Jest Vs Mocha
+subtitle:
+date: July 25, 2017
+author: Arvin bhurtun
+---
+
 # React Testing - Jest or Mocha? 
 
-July 25, 2017 5 minute read
+{{ page.date | date_to_string }} 5 minute read
 
 {% include likeButton.html %}
 

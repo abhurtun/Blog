@@ -2,13 +2,13 @@
 layout: default
 title: Jest REACT Enzyme TDD
 subtitle:
-date: 24/07/2017
+date: July 24, 2017
 author: Arvin bhurtun
 ---
 
 # React + enzyme + Jest TDD
 
-July 24, 2017 10 minute read
+{{ page.date | date_to_string }}  10 minute read
 
 {% include likeButton.html %}
 

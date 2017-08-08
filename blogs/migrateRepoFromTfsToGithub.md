@@ -1,6 +1,14 @@
+---
+layout: default
+title: Migrate repository from TFS to Github
+subtitle:
+date: August 8, 2017
+author: Arvin bhurtun
+---
+
 # Migrate repository from TFS to Github
 
-August 8, 2017 5 minute read
+{{ page.date | date_to_string }} 5 minute read
 
 {% include likeButton.html %}
 
