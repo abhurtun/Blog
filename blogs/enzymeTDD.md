@@ -10,8 +10,6 @@ author: Arvin bhurtun
 
 {% page.date %} 
 
-{% include readTime.html %}
-
 {% include likeButton.html %}
 
 ### Test Driven Development in an insane JS world
