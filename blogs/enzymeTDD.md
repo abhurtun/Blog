@@ -8,7 +8,7 @@ author: Arvin bhurtun
 
 # React + enzyme + Mocha TDD
 
-{% page.date %} 
+{{ page.date | date_to_string }} 
 
 {% include likeButton.html %}
 
