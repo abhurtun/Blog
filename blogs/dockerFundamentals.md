@@ -8,7 +8,9 @@ author: Arvin bhurtun
 
 # Docker Fundamentals
 
-{{ page.date | date_to_string }} {% include readTime.html content=post.content %}
+{{ page.date | date_to_string }} 
+
+{% include readTime.html content=post.content %}read
 
 {% include likeButton.html %}
 
