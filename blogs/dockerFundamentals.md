@@ -10,7 +10,7 @@ author: Arvin bhurtun
 
 {{ page.date | date_to_string }} 
 
-{% include readTime.html content=post.content %}read
+{{ page.content | read_time }}
 
 {% include likeButton.html %}
 
