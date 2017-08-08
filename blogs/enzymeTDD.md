@@ -8,7 +8,7 @@ author: Arvin bhurtun
 
 # React + enzyme + Mocha TDD
 
-{{ page.date | date_to_string }} {{ post.content | reading_time_as_i }} read
+{{ page.date | date_to_string }} {% include read-time.html content=post.content %} read
 
 {% include likeButton.html %}
 
