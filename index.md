@@ -25,32 +25,10 @@ Dont be afraid to fail!!!
 {% endif %}
 </div>
 
-<button data-toggle="collapse" data-target="#blogs">Blogs</button>
-<button class="collapse">
-<div id="blogs" class="collapse">
-    <li>
-        <a href="blogs/enzymeTDD.md">
-            [Quick Enzyme TDD]
-        </a>
-    </li>
-    <li>
-        <a href="blogs/jestTDD.md">
-        [Quick Jest TDD]
-        </a>
-    </li>
-    <li>
-        <a href="blogs/jestVSmocha.md">
-        [Jest vs Mocha]
-        </a>
-    </li>
-    <li>
-        <a href="blogs/dockerFundamentals.md">
-        [Docker tutorial]
-        </a>
-    </li>
-    <li>
-        <a href="blogs/migrateRepoFromTfsToGithub.md">
-        [Migrate repository from TFS to Github]
-        </a>
-    </li>
-</div>
+### Blogs
+
+* [Quick Enzyme TDD](blogs/enzymeTDD.md)
+* [Quick Jest TDD](blogs/jestTDD.md)
+* [Jest vs Mocha](blogs/jestVSmocha.md)
+* [Docker tutorial](blogs/dockerFundamentals.md)
+* [Migrate repository from TFS to Github](blogs/migrateRepoFromTfsToGithub.md)
