@@ -2,13 +2,15 @@
 layout: default
 title: React + enzyme + Mocha TDD
 subtitle:
-date: July 19, 2017
+date: July 17, 2017
 author: Arvin bhurtun
 ---
 
 # React + enzyme + Mocha TDD
 
-July 17, 2017 {% include readTime.html %}
+{% page.date %} 
+
+{% include readTime.html %}
 
 {% include likeButton.html %}
 
