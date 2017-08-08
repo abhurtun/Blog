@@ -10,7 +10,7 @@ author: Arvin bhurtun
 
 July 17, 2017 15 minute read 
 
-{% include fb-like.html %}
+{% include likeButton.html %}
 
 ### Test Driven Development in an insane JS world
 
