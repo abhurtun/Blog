@@ -10,4 +10,5 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
+  - jekyll-time-to-read
 logo: /img/logo.png
