@@ -10,6 +10,8 @@ author: Arvin bhurtun
 
 July 24, 2017 10 minute read
 
+{% include likeButton.html %}
+
 ### Test Driven Development in an insane JS world
 
 _With React becoming more and more popular with frontend, we will take a look at Jest using TDD approach._

@@ -2,6 +2,8 @@
 
 July 25, 2017 5 minute read
 
+{% include likeButton.html %}
+
 Both [Jest](https://facebook.github.io/jest) and [Mocha](https://mochajs.org) seem to be popular within the React community. There are tons of folks using Jest, though others seem to prefer Mocha (for example, the [Enzyme](http://airbnb.io/enzyme/) docs and examples use Mocha). So which one should you choose, and does it even matter?  
 
 I recently started a project using [TypeScript](https://www.typescriptlang.org), and we put some effort into researching which testing framework to use. In this post, I’ll discuss what we learned and highlight a few scenarios that may lend themselves to one over the other.
