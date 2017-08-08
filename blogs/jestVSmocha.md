@@ -8,7 +8,7 @@ author: Arvin bhurtun
 
 # React Testing - Jest or Mocha? 
 
-{{ page.date | date_to_string }} 5 minute read
+{{ page.date | date_to_string }} {% include readTime.html content=post.content %} read
 
 {% include likeButton.html %}
 
