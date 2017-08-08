@@ -27,7 +27,7 @@ Dont be afraid to fail!!!
     </a>
   </li>
 {% endif %}
-<ul>
+</ul>
 
 ### Table of contents
 

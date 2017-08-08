@@ -2,8 +2,8 @@ theme: jekyll-theme-cayman
 title: Arvin Bhurtun
 baseurl: "/Blog"
 github_username:      abhurtun
-linkedin_username:    arvin-bhurtun
-google_plus_username: Arvinhurtun
+linkedin_username:    arvin-bhurtun-45001526
+google_plus_username: 106251512845632471589
 gems:
   - jekyll-feed
   - jekyll-mentions
