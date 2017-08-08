@@ -4,6 +4,7 @@ baseurl: "/Blog"
 github_username:      abhurtun
 linkedin_username:    arvin-bhurtun-45001526
 google_plus_username: 106251512845632471589
+show_downloads: true
 gems:
   - jekyll-feed
   - jekyll-mentions
