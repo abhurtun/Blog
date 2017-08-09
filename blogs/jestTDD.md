@@ -203,3 +203,7 @@ export default class CheckboxWithLabel extends React.Component {
 Run `npm test` again and our test should pass.
 
 Et voila thats all we have time for folks :+1:
+
+---
+
+Return to [Blogs](../index.md).

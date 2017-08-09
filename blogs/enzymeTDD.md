@@ -328,3 +328,7 @@ There’s no excuse not to practice TDD. This means allowing your test to dictat
 In `package.json` we have a watcher keeping the test suite always running. Go ahead and run `npm run test:watch`.
 
 And voila you have a runner :+1:
+
+---
+
+Return to [Blogs](../index.md).

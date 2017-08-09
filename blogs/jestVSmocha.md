@@ -66,3 +66,7 @@ So which testing framework should you choose? I don’t think there’s a bad ch
 
 In short whether you choose Mocha or Jest, either will be just fine. :+1:
 **Just make sure you follow your software principles and TDD all the way.**
+
+---
+
+Return to [Blogs](../index.md).

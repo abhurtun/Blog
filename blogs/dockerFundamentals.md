@@ -184,3 +184,7 @@ That’s it! Now you have Redis up-and-running on your machine.This container/im
 Docker is a powerful tool for creating and running distributable, lightweight applications both locally and in production.
 
 There are many tools and services available to be used in Docker. For example, [Dockunit](https://dockunit.io) is a tool powered by Docker that lets you test your software across any environment. This tutorial has just scratched the surface of the Docker world.
+
+---
+
+Return to [Blogs](../index.md).

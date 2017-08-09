@@ -110,3 +110,7 @@ git push origin master --force
 9. Click __Save__
 
 10. Hit __Reorder build steps__ and move the newly created step to the top of the list and click __Apply__
+
+---
+
+Return to [Blogs](../index.md).
