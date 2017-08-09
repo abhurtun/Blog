@@ -5,7 +5,7 @@ subtitle:
 date: July 25, 2017
 author: Arvin bhurtun
 ---
-
+{% seo %}
 # React Testing - Jest or Mocha? 
 
 {{ page.date | date_to_string }} {% include readTime.html content=post.content %}read

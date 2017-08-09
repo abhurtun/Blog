@@ -5,7 +5,7 @@ subtitle:
 date: August 8, 2017
 author: Arvin bhurtun
 ---
-
+{% seo %}
 # Docker Fundamentals
 
 {{ page.date | date_to_string }}

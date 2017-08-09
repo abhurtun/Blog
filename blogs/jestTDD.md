@@ -5,7 +5,7 @@ subtitle:
 date: July 24, 2017
 author: Arvin bhurtun
 ---
-
+{% seo %}
 # React + enzyme + Jest TDD
 
 {{ page.date | date_to_string }} {% include readTime.html content=post.content %}read

@@ -5,7 +5,7 @@ subtitle:
 date: August 8, 2017
 author: Arvin bhurtun
 ---
-
+{% seo %}
 # Migrate repository from TFS to Github
 
 {{ page.date | date_to_string }} {% include readTime.html content=post.content %}read
