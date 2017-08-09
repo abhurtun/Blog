@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 ![image-title-here](img/logo.png){:class="img-responsive"}
+{% seo %}
 ## Welcome to my blog
 
 Hope you enjoy your read.
