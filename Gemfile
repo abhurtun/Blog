@@ -1,3 +1,3 @@
-source 'https://github.com/abhurtun/Blog'
+source 'https://rubygems.org'
 
 gem 'github-pages'
