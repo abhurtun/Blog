@@ -8,7 +8,7 @@ author: Arvin bhurtun
 {% seo %}
 # Creating a Serverless Application with ASP.NET Core, AWS Lambda and AWS API Gateway
 
-{{ page.date | date_to_string }} {% include readTime.html content=raw %}read
+{{ page.date | date_to_string }} {% include readTime.html %}
 
 {% include likeButton.html %}
 

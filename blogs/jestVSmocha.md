@@ -8,7 +8,7 @@ author: Arvin bhurtun
 {% seo %}
 # React Testing - Jest or Mocha? 
 
-{{ page.date | date_to_string }} {% include readTime.html content=post.content %}read
+{{ page.date | date_to_string }} {% include readTime.html %}
 
 {% include likeButton.html %}
 

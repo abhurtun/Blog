@@ -8,7 +8,7 @@ author: Arvin bhurtun
 {% seo %}
 # Docker Fundamentals
 
-{{ page.date | date_to_string }}
+{{ page.date | date_to_string }} {% include readTime.html %}
 
 {% include likeButton.html %}
 

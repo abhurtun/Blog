@@ -1,6 +1,6 @@
-  {% assign words = content | number_of_words %}
-  {% if words < 360 %}
-    1 min
-  {% else %}
-    {{ words | divided_by:180 }} mins
-  {% endif %}
+{% capture words %}
+{{ page.content | number_of_words | minus: 250 }}
+{% endcapture %}
+{% unless words contains "-" %}
+{{ words | plus: 250 | divided_by: 180 | append: " minute read" }}
+{% endunless %}
