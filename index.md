@@ -33,4 +33,4 @@ Dont be afraid to fail!!!
 * [Jest vs Mocha](blogs/jestVSmocha.md)
 * [Docker tutorial](blogs/dockerFundamentals.md)
 * [Migrate repository from TFS to Github](blogs/migrateRepoFromTfsToGithub.md)
-* [Aspnet-core Aws-lambda Serverless](blogs/aspnet-core-aws-lambda-serverless.md)
+* [Aspnet-core Aws-lambda Serverless](blogs/aspnetCoreAwsLambdaServerless.md)
