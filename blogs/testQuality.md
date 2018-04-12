@@ -1,8 +1,10 @@
 # Unit Testing Best Practice
 
-We gathered as a team and brainstormed all the best and worst practices in testing from our very subjective viewpoint. We also brainstormed how we could give suggestions to highlight inconsistent or bad practice. Here they are presented to gather everyones additions, changes, and removals.
+{{ page.date | date_to_string }} {% include readTime.html %}
 
-### Our test philosophy 
+{% include likeButton.html %}
+
+### Test philosophy
 Is captured nicely by this quote:
 
 ```
@@ -43,7 +45,7 @@ Tests should only assert on a single function from the system under test. If the
 ---
 
 
-### Fake all external interfaces.
+### Fake/Mock all external interfaces.
 
 ##### Description
 
@@ -55,9 +57,9 @@ An external interface could be another service within our micro-service architec
 
 ##### Description
 
-There are many conventions for test naming. Given the simplicity of xUnit I suggest.
+There are many conventions for test naming. Given the simplicity of nUnit I suggest.
 ```
-  "In 'X' when 'Y' it should 'Z'"
+  "Returns 'X' Given 'Y'"
 ```
 
 ---
@@ -161,3 +163,7 @@ Test that the schema of the data returned is correct instead of the actual value
 ##### Description
 
 Tests should be short and long tests should be schema tests.
+
+---
+
+Return to [Blogs](../index.md).

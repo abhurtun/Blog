@@ -35,3 +35,4 @@ Dont be afraid to fail!!!
 * [Migrate repository from TFS to Github](blogs/migrateRepoFromTfsToGithub.md)
 * [Aspnet-core Aws-lambda Serverless](blogs/aspnetCoreAwsLambdaServerless.md)
 * [Pair Programming](blogs/pairProgramming.md)
+* [Test Quality](blogs/testQuality.md)
