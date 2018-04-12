@@ -3,7 +3,7 @@ layout: default
 title: Pair Programming
 subtitle:
 date: January 31, 2018
-author: Arvin bhurtun
+author: Arvin Bhurtun
 ---
 {% seo %}
 

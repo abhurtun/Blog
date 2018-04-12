@@ -1,3 +1,12 @@
+---
+layout: default
+title: Test Quality
+subtitle:
+date: April 12, 2018
+author: Arvin Bhurtun
+---
+{% seo %}
+
 # Unit Testing Best Practice
 
 {{ page.date | date_to_string }} {% include readTime.html %}
