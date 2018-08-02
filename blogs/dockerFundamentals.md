@@ -2,10 +2,11 @@
 layout: default
 title: Docker Fundamentals
 subtitle:
-date: August 8, 2017
+date: August 2, 2018
 author: Arvin bhurtun
 ---
 {% seo %}
+
 # Docker Fundamentals
 
 {{ page.date | date_to_string }} {% include readTime.html %}
@@ -14,7 +15,7 @@ author: Arvin bhurtun
 
 This tutorial will explain the fundamentals of Docker and start you with some basic usage.
 
-## What is Docker?
+## What is Docker
 
 Docker is open source software to pack, ship and run any application as a lightweight container. Containers are completely hardware and platform independent so you don’t have to worry about whether what you are creating will run everywhere.
 
@@ -24,23 +25,33 @@ You might be wondering what could go into a “container”. Well, anything! You
 
 ## Installation
 
-Installing Docker is very easy. Visit the [official Docker installation page](https://docs.docker.com/installation/) and follow the instructions tailored for your operating system. There are simple installers for both Mac OS X and Windows.
+1. Installing Docker is very easy. Visit the [official Docker installation page](https://docs.docker.com/installation/) and follow the instructions tailored for your operating system. There are simple installers for both Mac OS X and Windows.
 
-After you’ve installed Docker, open the terminal and type the following:
+    After you’ve installed Docker, open the terminal and type the following:
 
-```
+    ```powershell
 
-$ docker info
+    docker info
 
-```
+    ```
 
 If your installation worked, you will see a bunch of information about your Docker installation. If not, you will need to revisit the install docs.
 
 <span data-sumome-listbuilder-embed-id="87963b091ef2fe129270bee386510a6d2e648263c2e578b161541a26946b9dab"></span>
 
+2. Have a light weight IDE like [Vscode](https://code.visualstudio.com/) installed and installed the official docker plugin.
+
+3. Create a new folder called
+
+    ```powershell
+
+    mkdir docker_demo
+
+    ```
+
 ## Creating Your First Docker Image
 
-Every Docker container is an “instance” of a Docker image. There is a [massive library of pre-built Docker images](https://hub.docker.com). However, in order to really understand Docker, you should create an image as an exercise.
+Every Docker container is an “instance” of a Docker image. There is a [massive library of pre-built Docker images](https://store.docker.com/). However, in order to really understand Docker, you should create an image as an exercise.
 
 Let’s create a Docker image for running Redis. [Redis](http://redis.io/) is an easy to use in-memory key/value store. It is commonly used as an object cache for many different platforms across many different environments and programming languages.
 
@@ -48,55 +59,55 @@ Remember how I said Docker images are built from layers? Well, every Docker imag
 
 The following command will start a Docker container based on the `Ubuntu:latest` image. `:latest` is called the image tag and in this case refers to the latest version of Ubuntu. If you don’t have the image locally, it will download it first. The container will be started in a bash terminal. Run the following:
 
-```
+```powershell
 
-$ docker run --name my-redis -it ubuntu:latest bash
+docker run --name my-redis -it ubuntu:latest bash
 
 ```
 
 `-it` let’s us interact with our container via the command line. `--name` just gives us a convenient way to reference our container. You should now be inside your container in a bash terminal seeing something like this:
 
-```
+```powershell
 
-$ root@ed35631e96f9
+root@ed35631e96f9
 
 ```
 
 As you can see, you are logged in as root to the container so no need for `sudo`. The Ubuntu base image is very bare bones. An important stratey for creating Docker images is keeping them as light as possible. Therefore you have to install a lot of things you normally just have. First, let’s install `wget`:
 
-```
+```powershell
 
-$ apt-get update
-$ apt-get install wget
+apt-get update
+apt-get install wget
 
 ```
 
 We need a few other things to build Redis from source and run it:
 
-```
+```powershell
 
-$ apt-get install build-essential tcl8.5
+apt-get install build-essential tcl8.5
 
 ```
 
 Now let’s install Redis:
 
-```
+```powershell
 
-$ wget http://download.redis.io/releases/redis-stable.tar.gz
-$ tar xzf redis-stable.tar.gz
-$ cd redis-stable
-$ make
-$ make install
-$ ./utils/install_server.sh
+wget http://download.redis.io/releases/redis-stable.tar.gz
+tar xzf redis-stable.tar.gz
+cd redis-stable
+make
+make install
+./utils/install_server.sh
 
 ```
 
 This downloads the newest version of Redis, builds it from source, and runs the installer. You will need to answer some configuration questions. Just use all the defaults. Now start Redis by running the following (it might already be started):
 
-```
+```powershell
 
-$ service redis_6379 start
+service redis_6379 start
 
 ```
 
@@ -106,9 +117,9 @@ _Note_: this container is an example, and is missing some things to make it trul
 
 Exit your container by running:
 
-```
+```powershell
 
-$ exit
+exit
 
 ```
 
@@ -116,17 +127,17 @@ Note that your container is now stopped since you exited bash. You can easily co
 
 Run the following command:
 
-```
+```powershell
 
-$ docker ps -a
+docker ps -a
 
 ```
 
 This command shows us all of our docker containers, running or stopped. See the container tagged with `my-redis`. That’s the one we created! Now let’s commit our container as an image:
 
-```
+```powershell
 
-$ docker commit -m "Added Redis" -a "Your Name" my-redis tlovett1/my-redis:latest
+docker commit -m "Added Redis" -a "Your Name" my-redis tlovett1/my-redis:latest
 
 ```
 
@@ -140,9 +151,11 @@ You might be thinking that this is somewhat messy since your container is basica
 
 A Dockerfile is a set of instructions written as a shell script for creating a Docker image. Let’s create a Dockerfile that generates an image like the one we just created manually but with some important additions.
 
-Create a file called `Dockerfile`. Paste the following into the new file:
+Open your folder `docker_demo` in vscode
 
-```
+Create a file called `Dockerfile.redis`. Paste the following into the new file:
+
+```docker
 
 FROM ubuntu:latest
 RUN apt-get update
@@ -161,9 +174,9 @@ There are some special things in this Dockerfile. `FROM` tells Docker which imag
 
 Now that we’ve written our Dockerfile, let’s build an image from it. Run the following command from within the folder of your Dockerfile:
 
-```
+```powershell
 
-$ docker build -t redis .
+docker build -t redis .
 
 ```
 
@@ -171,13 +184,34 @@ This command will create an image tagged `redis` from your Dockerfile.
 
 Finally, let’s create a running container from our image. Run the following command:
 
-```
+```powershell
 
-$ docker run -d -p 6379:6379 redis
+docker run -d -p 6379:6379 redis
 
 ```
 
 That’s it! Now you have Redis up-and-running on your machine.This container/image is production ready.
+
+Create a file called `Dockerfile.netCore`. Paste the following into the new file:
+
+[Code](https://github.com/dotnet/dotnet-docker/blob/master/samples/dotnetapp/Dockerfile)
+
+## Build and run the sample with Docker
+
+You can build and run the sample in Docker using the following commands. The instructions assume that you are in the root of the repository.
+
+```console
+cd samples
+cd dotnetapp
+docker build --pull -t dotnetapp .
+docker run --rm dotnetapp Hello .NET Core from Docker
+```
+
+The commands above run unit tests as part `docker build`. You can also [run .NET unit tests as part of `docker run`](dotnet-docker-unit-testing.md). The following instructions provide you with the simplest way of doing that.
+
+```console
+docker build --target testrunner -t dotnetapp:test .
+docker
 
 ## Conclusion
 
