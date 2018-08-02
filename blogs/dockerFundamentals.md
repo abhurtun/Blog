@@ -74,7 +74,7 @@ root@ed35631e96f9
 
 ```
 
-As you can see, you are logged in as root to the container so no need for `sudo`. The Ubuntu base image is very bare bones. An important stratey for creating Docker images is keeping them as light as possible. Therefore you have to install a lot of things you normally just have. First, let’s install `wget`:
+As you can see, you are logged in as root to the container so no need for `sudo`. The Ubuntu base image is very bare bones. An important strategy for creating Docker images is keeping them as light as possible. Therefore you have to install a lot of things you normally just have. First, let’s install `wget`:
 
 ```powershell
 
@@ -147,67 +147,33 @@ You might be thinking that this is somewhat messy since your container is basica
 
 A Dockerfile is a set of instructions written as a shell script for creating a Docker image. Let’s create a Dockerfile that generates an image like the one we just created manually but with some important additions.
 
-Open your folder `docker_demo` in vscode
-
-Create a file called `Dockerfile.redis`. Paste the following into the new file:
-
-```docker
-
-FROM ubuntu:latest
-RUN apt-get update
-RUN apt-get install -y wget
-RUN apt-get install -y build-essential tcl8.5
-RUN wget http://download.redis.io/releases/redis-stable.tar.gz
-RUN tar xzf redis-stable.tar.gz
-RUN cd redis-stable && make && make install
-RUN ./redis-stable/utils/install_server.sh
-EXPOSE 6379
-ENTRYPOINT  ["redis-server"]
-
-```
+Download [docker_demo](https://github.com/abhurtun/docker_demo) and open in vscode
 
 There are some special things in this Dockerfile. `FROM` tells Docker which image to start from. As you can see, we are starting with Ubuntu. `RUN` simply runs a shell command. `EXPOSE` opens up a port to be publicly accessible. 6379 is the standard Redis port. `ENTRYPOINT` designates the command or application to be run when a container is created. In this case whenever a container is created from our image, `redis-server` will be run.
 
 Now that we’ve written our Dockerfile, let’s build an image from it. Run the following command from within the folder of your Dockerfile:
 
-```powershell
-
-cd docker_demo
-docker build -t redis -f ./Dockerfile.redis
-
-```
-
-This command will create an image tagged `redis` from your Dockerfile.
-
-Finally, let’s create a running container from our image. Run the following command:
-
-```powershell
-
-docker run -d -p 6379:6379 redis
-
-```
-
-That’s it! Now you have Redis up-and-running on your machine.This container/image is production ready.
-
-Create a file called `Dockerfile.netCore`. Paste the following into the new file:
-
-[Code](https://github.com/dotnet/dotnet-docker/blob/master/samples/dotnetapp/Dockerfile)
-
-## Build and run the sample with Docker
-
 You can build and run the sample in Docker using the following commands. The instructions assume that you are in the root of the repository.
 
-```console
+```powershell
+
 cd docker_demo
-docker build --pull -t dotnetapp ./Dockerfile.netCore
+docker build --pull -f Dockerfile.netCore -t dotnetapp .
 docker run --rm dotnetapp Hello .NET Core from Docker
+
 ```
 
 The commands above run unit tests as part `docker build`. You can also [run .NET unit tests as part of `docker run`](dotnet-docker-unit-testing.md). The following instructions provide you with the simplest way of doing that.
 
-```console
+```powershell
+
 docker build --target testrunner -t dotnetapp:test .
-docker
+
+docker run --rm -it dotnetapp:test
+
+```
+
+That’s it! Now you have .net core application up-and-running on your machine.This container/image is production ready.
 
 ## Conclusion
 
