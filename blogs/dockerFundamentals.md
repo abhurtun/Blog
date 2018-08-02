@@ -39,7 +39,7 @@ If your installation worked, you will see a bunch of information about your Dock
 
 <span data-sumome-listbuilder-embed-id="87963b091ef2fe129270bee386510a6d2e648263c2e578b161541a26946b9dab"></span>
 
-2. Have a light weight IDE like [Vscode](https://code.visualstudio.com/) installed and installed the official docker plugin.
+2. Have a light weight IDE like [Vscode](https://code.visualstudio.com/) installed add the official docker plugin.
 
 3. Create a new folder called
 
