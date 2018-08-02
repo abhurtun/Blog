@@ -149,7 +149,8 @@ A Dockerfile is a set of instructions written as a shell script for creating a D
 
 Download [docker_demo](https://github.com/abhurtun/docker_demo) and open in vscode
 
-There are some special things in this Dockerfile. `FROM` tells Docker which image to start from. As you can see, we are starting with Ubuntu. `RUN` simply runs a shell command. `EXPOSE` opens up a port to be publicly accessible. 6379 is the standard Redis port. `ENTRYPOINT` designates the command or application to be run when a container is created. In this case whenever a container is created from our image, `redis-server` will be run.
+There are some special things in this Dockerfile. `FROM` tells Docker which image to start from.
+`RUN` simply runs a shell command. `EXPOSE` opens up a port to be publicly accessible. `ENTRYPOINT` designates the command or application to be run when a container is created.
 
 Now that we’ve written our Dockerfile, let’s build an image from it. Run the following command from within the folder of your Dockerfile:
 
