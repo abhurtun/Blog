@@ -25,29 +25,27 @@ You might be wondering what could go into a “container”. Well, anything! You
 
 ## Installation
 
-1. Installing Docker is very easy. Visit the [official Docker installation page](https://docs.docker.com/installation/) and follow the instructions tailored for your operating system. There are simple installers for both Mac OS X and Windows.
+* Installing Docker is very easy. Visit the [official Docker installation page](https://docs.docker.com/installation/) and follow the instructions tailored for your operating system. There are simple installers for both Mac OS X and Windows.
 
-    After you’ve installed Docker, open the terminal and type the following:
+After you’ve installed Docker, open the terminal and type the following:
 
-    ```powershell
+```powershell
 
-    docker info
+docker info
 
-    ```
+```
 
 If your installation worked, you will see a bunch of information about your Docker installation. If not, you will need to revisit the install docs.
 
-<span data-sumome-listbuilder-embed-id="87963b091ef2fe129270bee386510a6d2e648263c2e578b161541a26946b9dab"></span>
+* Have a light weight IDE like [Vscode](https://code.visualstudio.com/) installed 
+* Add the official docker plugin.
+*Create a new folder called
 
-2. Have a light weight IDE like [Vscode](https://code.visualstudio.com/) installed add the official docker plugin.
+```powershell
 
-3. Create a new folder called
+mkdir docker_demo
 
-    ```powershell
-
-    mkdir docker_demo
-
-    ```
+```
 
 ## Creating Your First Docker Image
 
