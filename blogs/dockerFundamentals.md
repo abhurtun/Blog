@@ -37,9 +37,11 @@ docker info
 
 If your installation worked, you will see a bunch of information about your Docker installation. If not, you will need to revisit the install docs.
 
-* Have a light weight IDE like [Vscode](https://code.visualstudio.com/) installed 
-* Add the official docker plugin.
-*Create a new folder called
+* Have a light weight IDE like [Vscode](https://code.visualstudio.com/) installed
+
+* Add the official `docker plugin` to vscode.
+
+* Create a new folder called
 
 ```powershell
 
@@ -55,10 +57,11 @@ Let’s create a Docker image for running Redis. [Redis](http://redis.io/) is an
 
 Remember how I said Docker images are built from layers? Well, every Docker image has to start with a base layer. Common base layers are Ubuntu and CentOS. Let’s use Ubuntu. (In production I would use Debian since it is much smaller.)
 
-The following command will start a Docker container based on the `Ubuntu:latest` image. `:latest` is called the image tag and in this case refers to the latest version of Ubuntu. If you don’t have the image locally, it will download it first. The container will be started in a bash terminal. Run the following:
+The following command will start a Docker container based on the `Ubuntu:latest` image. `:latest` is called the image tag and in this case refers to the latest version of Ubuntu. **Please ensure you are using a linux container.** The container will be started in a powershell terminal. Run the following:
 
 ```powershell
 
+docker pull ubuntu:latest
 docker run --name my-redis -it ubuntu:latest bash
 
 ```
@@ -92,12 +95,7 @@ Now let’s install Redis:
 
 ```powershell
 
-wget http://download.redis.io/releases/redis-stable.tar.gz
-tar xzf redis-stable.tar.gz
-cd redis-stable
-make
-make install
-./utils/install_server.sh
+apt-get install redis-server
 
 ```
 
@@ -105,7 +103,7 @@ This downloads the newest version of Redis, builds it from source, and runs the 
 
 ```powershell
 
-service redis_6379 start
+redis-server
 
 ```
 
@@ -121,7 +119,7 @@ exit
 
 ```
 
-Note that your container is now stopped since you exited bash. You can easily configure containers to run in the background though.
+**Note that your container is now stopped since you exited bash. You can easily configure containers to run in the background though.**
 
 Run the following command:
 
@@ -135,11 +133,11 @@ This command shows us all of our docker containers, running or stopped. See the 
 
 ```powershell
 
-docker commit -m "Added Redis" -a "Your Name" my-redis tlovett1/my-redis:latest
+docker commit -m "Added Redis" -a "Your Name" my-redis username/my-redis:latest
 
 ```
 
-This command compiles our container’s changes into an image. `-m` specifies a commit message, and `-a` let’s us specify an author. `tlovett/my-redis:latest` is formatted author/name:version. Author refers to your username on [Docker Hub](https://hub.docker.com/). If you don’t want to push your image to the Docker Hub, then this doesn’t matter, and you can use anything you want. If you do, you will need to create an account and use `docker push` to push the image upstream.
+This command compiles our container’s changes into an image. `-m` specifies a commit message, and `-a` let’s us specify an author. `username/my-redis:latest` is formatted author/name:version. Author refers to your username on [Docker Hub](https://hub.docker.com/). If you don’t want to push your image to the Docker Hub, then this doesn’t matter, and you can use anything you want. If you do, you will need to create an account and use `docker push` to push the image upstream.
 
 Docker commit creates an image containing the _changes_ we made to the original Ubuntu image. This makes distributing Docker containers super fast since people won’t have to re-download layers (such as Ubuntu:latest) that they already have. In a container, every time you run a command, add a file or directory, create an environmental variable, etc. a new _layer_ is created. Docker commit groups these layers into an image. When distributing Docker images, you should carefully optimize your layers to keep them as small as possible. This tutorial does not cover layer optimization.
 
@@ -168,13 +166,14 @@ ENTRYPOINT  ["redis-server"]
 
 ```
 
-There are some special things in this Dockerfile. `FROM` tells Docker which image to start from. As you can see, we are starting with Ubuntu. `RUN` simply runs a shell command. `EXPOSE` opens up a port to be publically accessible. 6379 is the standard Redis port. `ENTRYPOINT` designates the command or application to be run when a container is created. In this case whenever a container is created from our image, `redis-server` will be run.
+There are some special things in this Dockerfile. `FROM` tells Docker which image to start from. As you can see, we are starting with Ubuntu. `RUN` simply runs a shell command. `EXPOSE` opens up a port to be publicly accessible. 6379 is the standard Redis port. `ENTRYPOINT` designates the command or application to be run when a container is created. In this case whenever a container is created from our image, `redis-server` will be run.
 
 Now that we’ve written our Dockerfile, let’s build an image from it. Run the following command from within the folder of your Dockerfile:
 
 ```powershell
 
-docker build -t redis .
+cd docker_demo
+docker build -t redis -f ./Dockerfile.redis
 
 ```
 
@@ -199,9 +198,8 @@ Create a file called `Dockerfile.netCore`. Paste the following into the new file
 You can build and run the sample in Docker using the following commands. The instructions assume that you are in the root of the repository.
 
 ```console
-cd samples
-cd dotnetapp
-docker build --pull -t dotnetapp .
+cd docker_demo
+docker build --pull -t dotnetapp ./Dockerfile.netCore
 docker run --rm dotnetapp Hello .NET Core from Docker
 ```
 
