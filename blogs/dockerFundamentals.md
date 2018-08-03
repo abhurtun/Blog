@@ -159,7 +159,7 @@ You can build and run the sample in Docker using the following commands. The ins
 ```powershell
 
 cd docker_demo
-docker build --pull -f Dockerfile.netCore -t dotnetapp .
+docker build --pull -t dotnetapp .
 docker run --rm dotnetapp Hello .NET Core from Docker
 
 ```
