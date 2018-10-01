@@ -36,3 +36,5 @@ Dont be afraid to fail!!!
 * [Aspnet-core Aws-lambda Serverless](blogs/aspnetCoreAwsLambdaServerless.md)
 * [Pair Programming](blogs/pairProgramming.md)
 * [Test Quality](blogs/testQuality.md)
+* [Keeping Secrets](blogs/keepingSecrets.md)
+* [AWS SAM .Net Core](blogs/awsSamNetCore.md)
