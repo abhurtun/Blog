@@ -20,9 +20,6 @@ Clear enough? Maybe not. To understand it better, let’s look at a very simple 
 
 ## Prerequisites
 
-** Install SAM CLI **
-SAM CLI is a tool that also allows faster, iterative development of your Lambda function code, which is explained at Test Your Serverless Applications Locally Using SAM CLI (Public Beta). To use SAM CLI, you first need to install **Docker**.
-
 ### Installing Docker
 
 Docker is an open-source software container platform that allows you to build, manage and test applications, whether you're running on Linux, Mac or Windows. For more information and download instructions, see Docker.
@@ -37,6 +34,7 @@ Using docker-lambda, you can invoke your Lambda function locally. In this enviro
 
 ### Installing SAM CLI
 
+SAM CLI is a tool that also allows faster, iterative development of your Lambda function code, which is explained at Test Your Serverless Applications Locally Using SAM CLI (Public Beta). To use SAM CLI, you first need to install **Docker**.
 The easiest way to install SAM CLI is to use pip.
 
 You can run SAM CLI on Linux, Mac, or Windows environments. The easiest way to install SAM CLI is to use pip.

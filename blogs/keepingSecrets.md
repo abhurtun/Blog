@@ -75,8 +75,7 @@ When it comes to storing configuration values and keeping them out of source con
 
 I'll quickly cover the first two methods along with the pros and cons of each method before delving into the preferred third method into more depth.
 
-###   
-Using the Secrets Manager to Store App Secrets in .NET Core
+### Using the Secrets Manager to Store App Secrets in .NET Core
 
 The Secrets Manager is a new tool that can be used in .NET Core to store user secrets. Secrets are placed in a .json configuration file, which is placed in the user's profile relevant profile directory in Windows, Linux or Mac. Because the file is placed in the user's profile directory, the file will always be excluded from source control.  
 
@@ -173,6 +172,7 @@ Another key concept is environment aware configuration. For instance, you can lo
 
 Chaining configuration files together
 
+```csharp
     public Startup(IHostingEnvironment env)
     {
          var builder = new ConfigurationBuilder()
@@ -182,6 +182,7 @@ Chaining configuration files together
 
          Configuration = builder.Build();
     }
+```
 
 #### Understanding Git's .gitignore
 
@@ -198,9 +199,9 @@ Git provides a very easy way to exclude files from being checked into Git. Subve
 
 By tying all three concepts together, we can use the following simple but effective solution to keep sensitive configuration data out of Git.
 
-1.  Add an appsettings.development.json file to your project. Use this file for storing all your configuration values
-2.  Use appsettings.json only as an example template and never to store any settings. This file will be checked into source control and will be used by developers to setup their own appsettings.{env.EnvironmentName}.json file
-3.  Add a .gitignore rule to ignore appsettings.{env.EnvironmentName}.json
+1. Add an appsettings.development.json file to your project. Use this file for storing all your configuration values
+2. Use appsettings.json only as an example template and never to store any settings. This file will be checked into source control and will be used by developers to setup their own appsettings.{env.EnvironmentName}.json file
+3. Add a .gitignore rule to ignore appsettings.{env.EnvironmentName}.json
 
 `appsettings.json`
 
@@ -276,22 +277,20 @@ By tying all three concepts together, we can use the following simple but effect
 
 ### Best Practices
 
-1.  Never commit any secrets to source control, even if it's a private repository.
-2.  Use multiple configuration files instead of one big one. For instance, keep connection strings in connectionstrings.development.json, general settings in appsettings.development.json, mail settings in mailsettings.development.json and so forth.
-3.  Never hard-code configuration values in code.
-4.  Document the process of keeping secrets out of source control, and make sure everyone on your team is on board with the process. All new developers must use the same process. It only takes a single mistake to expose sensitive information.
-5.  Always make sure that ignore rules exist for new configuration files.
-6.  Double check commits in the git staging area before committing.
-
-</div>
+1. Never commit any secrets to source control, even if it's a private repository.
+2. Use multiple configuration files instead of one big one. For instance, keep connection strings in connectionstrings.development.json, general settings in appsettings.development.json, mail settings in mailsettings.development.json and so forth.
+3. Never hard-code configuration values in code.
+4. Document the process of keeping secrets out of source control, and make sure everyone on your team is on board with the process. All new developers must use the same process. It only takes a single mistake to expose sensitive information.
+5. Always make sure that ignore rules exist for new configuration files.
+6. Double check commits in the git staging area before committing.
 
 ### Related Posts
 
-*   [How to Store Secrets in Azure Key Vault Using .NET Core](https://www.humankode.com/asp-net-core/how-to-store-secrets-in-azure-key-vault-using-net-core)
+* [How to Store Secrets in Azure Key Vault Using .NET Core](https://www.humankode.com/asp-net-core/how-to-store-secrets-in-azure-key-vault-using-net-core)
 
 ### Resources
 
-*   [Best practices for private config data and connection strings in configuration in ASP.NET and Azure](https://www.hanselman.com/blog/BestPracticesForPrivateConfigDataAndConnectionStringsInConfigurationInASPNETAndAzure.aspx) - By Scott Hanselman
+* [Best practices for private config data and connection strings in configuration in ASP.NET and Azure](https://www.hanselman.com/blog/BestPracticesForPrivateConfigDataAndConnectionStringsInConfigurationInASPNETAndAzure.aspx) - By Scott Hanselman
 
 ---
 
