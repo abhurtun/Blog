@@ -193,6 +193,40 @@ In your browser try hosted link from the out put http://localhost:3000/hello
 
 And voila you have a runner :+1:
 
+## Advance concepts
+
+### AWS CLI
+
+Configuring and creating your user account [more](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+
+### IAM Credentials
+
+SAM CLI will invoke functions with your locally configured IAM
+credentials.
+
+As with the AWS CLI and SDKs, SAM CLI will look for credentials in the
+following order:
+
+1. Environment Variables (``AWS_ACCESS_KEY_ID``,
+   ``AWS_SECRET_ACCESS_KEY``).
+2. The AWS credentials file (located at ``~/.aws/credentials`` on Linux,
+   macOS, or Unix, or at ``C:\Users\USERNAME \.aws\credentials`` on
+   Windows).
+3. Instance profile credentials (if running on Amazon EC2 with an
+   assigned instance role).
+
+[more](https://github.com/awslabs/aws-sam-cli/blob/develop/docs/advanced_usage.rst#iam-credentials)
+
+### Missing dependencies for .Net Core
+
+You can add this to a <PropertyGroup> inside your csproj file to enforce copying NuGet assemblies to the built output:
+
+```csharp
+<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+```
+
+[more](https://stackoverflow.com/questions/43837638/how-to-get-net-core-projects-to-copy-nuget-references-to-build-output/43841481)
+
 ---
 
 Return to [Blogs](../index.md).
