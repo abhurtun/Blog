@@ -219,10 +219,11 @@ following order:
 
 ### Missing dependencies for .Net Core
 
-You can add this to a <PropertyGroup> inside your csproj file to enforce copying NuGet assemblies to the built output:
+The More Lightweight, DevOps-Friendly Fix
+Thanks to this thread on StackOverflow and a comment from Nate McMaster, there’s an easier way to do this that doesn’t require editing your csproj file.  Turns out that there’s an undocumented /property command line option for “dotnet publish” that lets you pass msbuild variables in.  Supply the following /property value and it causes dotnet publish to publish all the dependencies.
 
-```csharp
-<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+```powershell
+dotnet publish -o .\output /property:PublishWithAspNetCoreTargetManifest=false
 ```
 
 [more](https://stackoverflow.com/questions/43837638/how-to-get-net-core-projects-to-copy-nuget-references-to-build-output/43841481)
