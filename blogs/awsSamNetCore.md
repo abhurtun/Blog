@@ -197,12 +197,11 @@ And voila you have a runner :+1:
 
 ### AWS CLI
 
-Configuring and creating your user account [more](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+- Configuring and creating your user account [more](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 
 ### IAM Credentials
 
-SAM CLI will invoke functions with your locally configured IAM
-credentials.
+- SAM CLI will invoke functions with your locally configured IAM credentials.
 
 As with the AWS CLI and SDKs, SAM CLI will look for credentials in the
 following order:
@@ -219,7 +218,8 @@ following order:
 
 ### Missing dependencies for .Net Core
 
-The More Lightweight, DevOps-Friendly Fix
+- **The More Lightweight, DevOps-Friendly Fix**
+
 Thanks to this thread on StackOverflow and a comment from Nate McMaster, there’s an easier way to do this that doesn’t require editing your csproj file.  Turns out that there’s an undocumented /property command line option for “dotnet publish” that lets you pass msbuild variables in.  Supply the following /property value and it causes dotnet publish to publish all the dependencies.
 
 ```powershell

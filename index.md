@@ -28,13 +28,13 @@ Dont be afraid to fail!!!
 
 ### Blogs
 
+* [AWS SAM .Net Core](blogs/awsSamNetCore.md)
+* [Aspnet-core Aws-lambda Serverless](blogs/aspnetCoreAwsLambdaServerless.md)
+* [Docker tutorial](blogs/dockerFundamentals.md)
 * [Quick Enzyme TDD](blogs/enzymeTDD.md)
 * [Quick Jest TDD](blogs/jestTDD.md)
 * [Jest vs Mocha](blogs/jestVSmocha.md)
-* [Docker tutorial](blogs/dockerFundamentals.md)
-* [Migrate repository from TFS to Github](blogs/migrateRepoFromTfsToGithub.md)
-* [Aspnet-core Aws-lambda Serverless](blogs/aspnetCoreAwsLambdaServerless.md)
-* [Pair Programming](blogs/pairProgramming.md)
-* [Test Quality](blogs/testQuality.md)
 * [Keeping Secrets](blogs/keepingSecrets.md)
-* [AWS SAM .Net Core](blogs/awsSamNetCore.md)
+* [Test Quality](blogs/testQuality.md)
+* [Pair Programming](blogs/pairProgramming.md)
+* [Migrate repository from TFS to Github](blogs/migrateRepoFromTfsToGithub.md)
