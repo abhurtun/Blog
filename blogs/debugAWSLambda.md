@@ -27,11 +27,11 @@ Once you have Docker installed, SAM CLI automatically provides a customized Dock
 
 Using docker-lambda, you can invoke your Lambda function locally. In this environment, your serverless applications execute and perform much as in the AWS Lambda runtime, without your having to redeploy the runtime. Their execution and performance in this environment reflect such considerations as timeouts and memory use.
 
-# Info
+## Info
 
 This steps are to test dotnet core 2.0/2.1 debugging within the lambda dotnet runtime docker container.
 
-## Description
+### Description
 
 This project utilized the container images from the [lambci/docker-lambda](https://github.com/lambci/docker-lambda/tree/master/examples/dotnetcore2.1) project as well as the sample code and vscode launch configuration from the [sleemer/docker.dotnet.debug](https://github.com/sleemer/docker.dotnet.debug) project.
 
@@ -39,7 +39,7 @@ The __lambci/lambda:dotnetcore2.1__ container image was modified to include VSDB
 
 The vscode launch configuration was modified to use the `pipeTransport` protocol to communicate with VSDBG in the docker container and run the lambda bootstrapper, __MockBootstraps.dll__.
 
-## launch.json
+#### launch.json
 
 The args contains the handler to be launched by vscode as the first parameter followed by another object describe as json.
 
@@ -81,7 +81,7 @@ The args contains the handler to be launched by vscode as the first parameter fo
         }
 ```
 
-## Dockerfile
+#### Dockerfile
 
 The docker file add vsdbg to the image and the sleep for debugging.
 
@@ -101,7 +101,7 @@ ENTRYPOINT ["/bin/bash", "-c", "sleep infinity"]
 
 ```
 
-## Run Script
+#### Run Script
 
 ```powershell
 $name = "lambda_dotnetcore2.1"
@@ -142,7 +142,7 @@ dotnet build -c Debug -v quiet
 Write-Host "> Run the vscode debugger to continue"
 ```
 
-## Setup & Run
+#### Setup & Run
 
 ```powershell
 docker pull lambci/lambda:dotnetcore2.1
@@ -152,7 +152,7 @@ docker pull lambci/lambda:dotnetcore2.1
 - Set a breakpoint in Function.cs
 - Run the vscode _.NET Core Docker Launch (console)_ launch task (F5)
 
-## Screenshots
+#### Screenshots
 
 ![Debugging Lambda](../img/debugging_lambda.png "Debugging Lambda")
 
