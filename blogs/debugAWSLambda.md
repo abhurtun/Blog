@@ -126,7 +126,7 @@ Write-Host "> Building lambda dotnetcore2.1 container"
 docker build -q -t "$me/lambda:dotnetcore2.1" .
 
 # Kill running container if it exists
-$id = docker ps --filter "name=$name" --format "{{.ID}}"
+$id = docker ps --filter "name=$name"
 if ($id) {
   Write-Host "> Cleaning up existing lambda dotnetcore2.1 container"
   docker kill $id
