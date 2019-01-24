@@ -28,6 +28,7 @@ Dont be afraid to fail!!!
 
 ### Blogs
 
+* [GoodTechLead](blogs/goodTechLead.md)
 * [Debug AWS Lambda using VsCode](blogs/debugAWSLambda.md)
 * [AWS SAM .Net Core](blogs/awsSamNetCore.md)
 * [Aspnet-core Aws-lambda Serverless](blogs/aspnetCoreAwsLambdaServerless.md)
