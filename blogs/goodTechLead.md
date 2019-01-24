@@ -17,7 +17,7 @@ A Tech Leads is responsible for important leadership activities such as:
 
 ### Guiding the project technical vision
 
-Eg. what technology are we going to use, how are we going to deliver the project, what patterns will we use, **working closely with the architect, technical advisor** etc.
+Eg. what technology are we going to use, how are we going to deliver the project, what patterns will we use, **working closely with the architect, technical advisor, testers, operations** etc.
 
 ### Mitigating risks and cross-functional requirements
 
@@ -38,8 +38,8 @@ Share responsibility, give ownership but stay accountable.
 
 ### Bridging communication between stakeholders and the team.
 
-Business stakeholders are less technical in nature then developers.
-Therefore when communicating with stakeholders the Tech Lead will need to be unambiguous, clear and precise to bridge that gap.
+Business stakeholders/Product owners are less technical in nature then developers.
+Therefore when communicating with them the Tech Lead will need to be unambiguous, clear and precise to bridge that gap.
 
 As a Tech Lead, you should always be available for your team; 
 
@@ -75,7 +75,8 @@ A Tech lead has a lot of non-coding responsibilities, but it is very important n
 * Do code reviews and have your code reviewed.
 * Insure a technical vision exists and is shared by the team.
 * Keep an eye on the evolution of the code.
-* Remember non-functional requirements such as networking, security, deployment and consistency
+* Remember non-functional requirements such as networking, security, deployment and consistency'
+* A united front on requirements gathering will help the team and make a happy business.
 
 ### Surround yourself with other Tech Leads
 
