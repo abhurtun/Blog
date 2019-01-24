@@ -17,7 +17,7 @@ A Tech Leads is responsible for important leadership activities such as:
 
 ### Guiding the project technical vision
 
-Eg. what technology are we going to use, how are we going to deliver the project, what patterns will we use, working closely with the architect etc.
+Eg. what technology are we going to use, how are we going to deliver the project, what patterns will we use, **working closely with the architect, technical advisor** etc.
 
 ### Mitigating risks and cross-functional requirements
 
