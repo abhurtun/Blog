@@ -28,6 +28,7 @@ Dont be afraid to fail!!!
 
 ### Blogs
 
+* [ManagingCrossTeamDependencies.md](managingCrossTeamDependencies.md)
 * [GoodTechLead](blogs/goodTechLead.md)
 * [Debug AWS Lambda using VsCode](blogs/debugAWSLambda.md)
 * [AWS SAM .Net Core](blogs/awsSamNetCore.md)

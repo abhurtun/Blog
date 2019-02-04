@@ -93,3 +93,7 @@ Tech Leads to promote agile working. Involve the business, it doesn’t really m
 # Conclusion
 
 The team’s strength is not about, how many talented individuals are in it, but how they all collaborate, have the same passion and goals, and mutual respect for each other.
+
+---
+
+Return to [Blogs](../index.md).
