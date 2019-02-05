@@ -29,6 +29,9 @@
   text-decoration: none;
   display: block;
 }
+.pad a {
+margin-right:20px
+}
 
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -48,7 +51,7 @@ Hope you enjoy your read.
 Dont be afraid to fail!!!
 
 {{ site.time | date_to_long_string }}
-<div>
+<div class="pad">
 {% if site.github_username %}
     <a href="https://github.com/{{ site.github_username }}">
       <i class="fa fa-github"></i> GitHub
