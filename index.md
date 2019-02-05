@@ -45,10 +45,11 @@ margin-right:20px
 
 ![image-title-here](img/logo.png){:class="img-responsive"}
 {% seo %}
-## Welcome to my blog
 
-Hope you enjoy your read.
-Dont be afraid to fail!!!
+# Welcome
+
+## Hope you enjoy your read.
+## Dont be afraid to fail!!!
 
 {{ site.time | date_to_long_string }}
 <div class="pad">
