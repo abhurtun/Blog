@@ -66,27 +66,21 @@ Dont be afraid to fail!!!
 {% endif %}
 </div>
 
-### Blogs
-
 <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
+  <button class="dropbtn">Blogs</button>
   <div class="dropdown-content">
     <a href="blogs/managingCrossTeamDependencies.html">Managing Cross Team Dependencies</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="blogs/goodTechLead.html">Good Tech Lead</a>
+    <a href="blogs/debugAWSLambda.html">Debug AWS Lambda using VsCode</a>
+    <a href="blogs/awsSamNetCore.html">AWS SAM .Net Core</a>
+    <a href="blogs/aspnetCoreAwsLambdaServerless.html">Aspnet-core Aws-lambda Serverless</a>
+    <a href="blogs/dockerFundamentals.html">Docker tutorial</a>
+    <a href="blogs/enzymeTDD.html<">Quick Enzyme TDD</a>
+    <a href="blogs/jestTDD.html">Quick Jest TDD</a>
+    <a href="blogs/jestVSmocha.html">Jest vs Mocha</a>
+    <a href="blogs/keepingSecrets.html">Keeping Secrets</a>
+    <a href="blogs/testQuality.html">Test Quality</a>
+    <a href="blogs/pairProgramming.html">Pair Programming</a>
+    <a href="blogs/migrateRepoFromTfsToGithub.html">Migrate repository from TFS to Github</a>
   </div>
 </div>
-
-* [ManagingCrossTeamDependencies.md](blogs/managingCrossTeamDependencies.md)
-* [GoodTechLead](blogs/goodTechLead.md)
-* [Debug AWS Lambda using VsCode](blogs/debugAWSLambda.md)
-* [AWS SAM .Net Core](blogs/awsSamNetCore.md)
-* [Aspnet-core Aws-lambda Serverless](blogs/aspnetCoreAwsLambdaServerless.md)
-* [Docker tutorial](blogs/dockerFundamentals.md)
-* [Quick Enzyme TDD](blogs/enzymeTDD.md)
-* [Quick Jest TDD](blogs/jestTDD.md)
-* [Jest vs Mocha](blogs/jestVSmocha.md)
-* [Keeping Secrets](blogs/keepingSecrets.md)
-* [Test Quality](blogs/testQuality.md)
-* [Pair Programming](blogs/pairProgramming.md)
-* [Migrate repository from TFS to Github](blogs/migrateRepoFromTfsToGithub.md)
