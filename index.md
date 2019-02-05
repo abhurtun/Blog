@@ -41,6 +41,7 @@ margin-right:20px
 </style>
 </head>
 
+<div style="margin:0 auto">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 ![image-title-here](img/logo.png){:class="img-responsive"}
@@ -50,6 +51,25 @@ margin-right:20px
 
 ## Hope you enjoy your read.
 ## Dont be afraid to fail!!!
+
+<div class="dropdown">
+  <button class="dropbtn">Blogs</button>
+  <div class="dropdown-content">
+    <a href="blogs/managingCrossTeamDependencies.html">Managing Cross Team Dependencies</a>
+    <a href="blogs/goodTechLead.html">Good Tech Lead</a>
+    <a href="blogs/debugAWSLambda.html">Debug AWS Lambda using VsCode</a>
+    <a href="blogs/awsSamNetCore.html">AWS SAM .Net Core</a>
+    <a href="blogs/aspnetCoreAwsLambdaServerless.html">Aspnet-core Aws-lambda Serverless</a>
+    <a href="blogs/dockerFundamentals.html">Docker tutorial</a>
+    <a href="blogs/enzymeTDD.html<">Quick Enzyme TDD</a>
+    <a href="blogs/jestTDD.html">Quick Jest TDD</a>
+    <a href="blogs/jestVSmocha.html">Jest vs Mocha</a>
+    <a href="blogs/keepingSecrets.html">Keeping Secrets</a>
+    <a href="blogs/testQuality.html">Test Quality</a>
+    <a href="blogs/pairProgramming.html">Pair Programming</a>
+    <a href="blogs/migrateRepoFromTfsToGithub.html">Migrate repository from TFS to Github</a>
+  </div>
+</div>
 
 {{ site.time | date_to_long_string }}
 <div class="pad">
@@ -69,22 +89,4 @@ margin-right:20px
     </a>
 {% endif %}
 </div>
-
-<div class="dropdown">
-  <button class="dropbtn">Blogs</button>
-  <div class="dropdown-content">
-    <a href="blogs/managingCrossTeamDependencies.html">Managing Cross Team Dependencies</a>
-    <a href="blogs/goodTechLead.html">Good Tech Lead</a>
-    <a href="blogs/debugAWSLambda.html">Debug AWS Lambda using VsCode</a>
-    <a href="blogs/awsSamNetCore.html">AWS SAM .Net Core</a>
-    <a href="blogs/aspnetCoreAwsLambdaServerless.html">Aspnet-core Aws-lambda Serverless</a>
-    <a href="blogs/dockerFundamentals.html">Docker tutorial</a>
-    <a href="blogs/enzymeTDD.html<">Quick Enzyme TDD</a>
-    <a href="blogs/jestTDD.html">Quick Jest TDD</a>
-    <a href="blogs/jestVSmocha.html">Jest vs Mocha</a>
-    <a href="blogs/keepingSecrets.html">Keeping Secrets</a>
-    <a href="blogs/testQuality.html">Test Quality</a>
-    <a href="blogs/pairProgramming.html">Pair Programming</a>
-    <a href="blogs/migrateRepoFromTfsToGithub.html">Migrate repository from TFS to Github</a>
-  </div>
 </div>
