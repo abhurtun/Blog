@@ -74,6 +74,7 @@ margin-right:20px
 <div class="dropdown">
   <button class="dropbtn">Blogs</button>
   <div class="dropdown-content">
+    <a href="blogs/trunkBasedDevelopment.html">Trunk Based Development</a>
     <a href="blogs/managingCrossTeamDependencies.html">Managing Cross Team Dependencies</a>
     <a href="blogs/goodTechLead.html">Good Tech Lead</a>
     <a href="blogs/debugAWSLambda.html">Debug AWS Lambda using VsCode</a>
