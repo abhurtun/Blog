@@ -9,6 +9,11 @@ author: Arvin bhurtun
 
 # Tips to become an awesome Technical Lead
 
+
+{{ page.date | date_to_string }} {% include readTime.html %}
+
+{% include likeButton.html %}
+
 ## What is Technical Leadership
 
 A Technical Lead main responsibility is to help the team move forward. The person assigned this role, is someone who has sound technical experience and strong communication skills. He or she is accountable for the technical direction of the project or product and is the go-to person for cross-team interactions.

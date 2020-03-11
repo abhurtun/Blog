@@ -9,6 +9,10 @@ author: Arvin bhurtun
 
 # AWS ECS DOCKER Quick Guide
 
+{{ page.date | date_to_string }} {% include readTime.html %}
+
+{% include likeButton.html %}
+
 ## Docker summary
 
 Docker Containers are like the boxed-spaces where we can build anything inside. 
@@ -137,3 +141,7 @@ Creating a Service tells our Cluster to go beyond just running Tasks - it manage
 ## Application Load Balancers
 
 Application Load Balancers are needed to direct traffic to Containers. They allow for a variety of powerful concepts like name-spacing sets of containers as "Target Groups." This allows us to direct traffic to different sets based on rules like the request Protocol or Path.
+
+---
+
+Return to [Blogs](../index.md).

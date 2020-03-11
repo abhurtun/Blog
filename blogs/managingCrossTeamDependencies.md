@@ -9,6 +9,10 @@ author: Arvin bhurtun
 
 # Managing Cross-team Dependencies
 
+{{ page.date | date_to_string }} {% include readTime.html %}
+
+{% include likeButton.html %}
+
 ## Intro
 
 Cross-team dependencies can be painful and cause friction in an organization. Unmanaged it will result into missed deadlines, non-stop meetings and chaotic context switching.
