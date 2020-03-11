@@ -88,5 +88,6 @@ margin-right:20px
     <a href="blogs/testQuality.html">Test Quality</a>
     <a href="blogs/pairProgramming.html">Pair Programming</a>
     <a href="blogs/migrateRepoFromTfsToGithub.html">Migrate repository from TFS to Github</a>
+    <a href="blogs/awsECSDocker.html">AWS ECS and Docker Quick Guide</a>
   </div>
 </div>
