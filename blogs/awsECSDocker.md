@@ -45,35 +45,35 @@ A Cluster is a group of EC2 instances, that each have an ECS Container Agent on 
 
 1. Create a Cluster using AWS CLI
 
-```powershell
-aws ecs create-cluster --cluster-name "my-cluster"
-```
+    ```powershell
+    aws ecs create-cluster --cluster-name "my-cluster"
+    ```
 
 2. Create the IAM Role for the EC2 Instances to be used in the Cluster
 
-EC2 instances that hook up with ECS need an IAM role with the AmazonEC2ContainerServiceforEC2Role policy. This is actually a managed policy, meaning that it's pre-made. So all that's need to create this role is to:
+    EC2 instances that hook up with ECS need an IAM role with the AmazonEC2ContainerServiceforEC2Role policy. This is actually a managed policy, meaning that it's pre-made. So all that's need to create this role is to:
 
-- Create a new IAM role with the type: Amazon EC2 Role for EC2 Container Service
+    - Create a new IAM role with the type: Amazon EC2 Role for EC2 Container Service
 
-- Select the AmazonEC2ContainerServiceforEC2Role policy
+    - Select the AmazonEC2ContainerServiceforEC2Role policy
 
 3. Set up EC2 instances with the ECS Container Agent
 
-The best way to create an instance that's ready to hook up with ECS is to just use the AMI "ECS Optimized AMI"
+    The best way to create an instance that's ready to hook up with ECS is to just use the AMI "ECS Optimized AMI"
 
 4. Point the ECS Container Agent on the instances to the Cluster
 
-If we're using the ECS Optimized AMI add to config file /etc/ecs/ecs.config
+    If we're using the ECS Optimized AMI add to config file /etc/ecs/ecs.config
 
-```
-ECS_CLUSTER=YOURCLUSTERNAME  
-```
+    ```
+    ECS_CLUSTER=YOURCLUSTERNAME  
+    ```
 
-You can do this using a user data script. The script can either write to the ECS_CLUSTER variable itself or we can keep our config file in a secure S3 bucket and pull it in.
+    You can do this using a user data script. The script can either write to the ECS_CLUSTER variable itself or we can keep our config file in a secure S3 bucket and pull it in.
 
 5. Launch the instances!
 
-The instances will automatically "join" the Cluster
+    The instances will automatically "join" the Cluster
 
 # Task Definitions
 
