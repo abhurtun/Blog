@@ -6,6 +6,8 @@ date: July 24, 2017
 author: Arvin bhurtun
 ---
 {% seo %}
+{% feed_meta %}
+
 # React + enzyme + Jest TDD
 
 {{ page.date | date_to_string }} {% include readTime.html %}

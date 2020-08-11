@@ -6,6 +6,7 @@ date: October 01, 2018
 author: Arvin bhurtun
 ---
 {% seo %}
+{% feed_meta %}
 
 # Aws Sam Tutorial
 

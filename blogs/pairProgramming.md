@@ -6,6 +6,7 @@ date: January 31, 2018
 author: Arvin Bhurtun
 ---
 {% seo %}
+{% feed_meta %}
 
 # Pair Programming
 

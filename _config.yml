@@ -11,4 +11,5 @@ gems:
   - jekyll-sitemap
   - jemoji
   - jekyll-seo-tag
+  - jekyll-feed
 logo: /img/logo.png

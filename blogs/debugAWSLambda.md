@@ -6,6 +6,7 @@ date: November 02, 2018
 author: Arvin bhurtun
 ---
 {% seo %}
+{% feed_meta %}
 
 # Debugging AWS Lambda using VsCode
 

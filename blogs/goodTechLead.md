@@ -6,6 +6,7 @@ date: Jan 23, 2019
 author: Arvin bhurtun
 ---
 {% seo %}
+{% feed_meta %}
 
 # Tips to become an awesome Technical Lead
 

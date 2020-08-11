@@ -6,6 +6,8 @@ date: August 8, 2017
 author: Arvin bhurtun
 ---
 {% seo %}
+{% feed_meta %}
+
 # Migrate repository from TFS to Github
 
 {{ page.date | date_to_string }} {% include readTime.html %}
