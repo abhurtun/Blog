@@ -45,6 +45,7 @@ margin-right:20px
 
 ![image-title-here](img/logo.png){:class="img-responsive"}
 {% seo %}
+{% feed_meta %}
 
 # Welcome
 
