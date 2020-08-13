@@ -91,5 +91,4 @@ margin-right:20px
     <a href="blogs/migrateRepoFromTfsToGithub.html">Migrate repository from TFS to Github</a>
     <a href="blogs/awsECSDocker.html">AWS ECS and Docker Quick Guide</a>
   </div>
-  <a class="dropbtn" href="/Blog/feed.xml" target="_blank">RSS</a>
 </div>
