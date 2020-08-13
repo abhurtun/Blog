@@ -5,7 +5,7 @@ subtitle:
 date: March 06, 2019
 author: Arvin Bhurtun
 ---
-{% feed_meta %}
+
 {% seo %}
 
 

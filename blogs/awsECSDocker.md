@@ -6,7 +6,7 @@ date: Febuary 11, 2020
 author: Arvin bhurtun
 ---
 {% seo %}
-{% feed_meta %}
+
 
 # AWS ECS DOCKER Quick Guide
 

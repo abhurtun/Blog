@@ -6,7 +6,7 @@ date: July 17, 2017
 author: Arvin bhurtun
 ---
 {% seo %}
-{% feed_meta %}
+
 
 # React + enzyme + Mocha TDD
 

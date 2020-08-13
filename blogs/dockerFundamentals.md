@@ -6,7 +6,7 @@ date: August 2, 2018
 author: Arvin bhurtun
 ---
 {% seo %}
-{% feed_meta %}
+
 
 # Docker Fundamentals
 

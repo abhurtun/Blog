@@ -6,7 +6,7 @@ date: April 12, 2018
 author: Arvin Bhurtun
 ---
 {% seo %}
-{% feed_meta %}
+
 
 # Unit Testing Best Practice
 

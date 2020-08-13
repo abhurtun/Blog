@@ -5,13 +5,9 @@ github_username:      abhurtun
 linkedin_username:    arvin-bhurtun-45001526
 google_plus_username: 106251512845632471589
 gems:
-  - jekyll-feed
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
   - jekyll-seo-tag
-  - jekyll-feed
 logo: /img/logo.png
-feed:
-  path: feed.xml

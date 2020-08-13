@@ -6,7 +6,7 @@ date: August 23, 2017
 author: Arvin bhurtun
 ---
 {% seo %}
-{% feed_meta %}
+
 
 # Creating a Serverless Application with ASP.NET Core, AWS Lambda and AWS API Gateway
 

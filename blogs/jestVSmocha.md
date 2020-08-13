@@ -6,7 +6,7 @@ date: July 25, 2017
 author: Arvin bhurtun
 ---
 {% seo %}
-{% feed_meta %}
+
 
 # React Testing - Jest or Mocha? 
 

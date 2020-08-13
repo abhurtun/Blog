@@ -6,7 +6,7 @@ date: Jan 30, 2019
 author: Arvin bhurtun
 ---
 {% seo %}
-{% feed_meta %}
+
 
 # Managing Cross-team Dependencies
 
