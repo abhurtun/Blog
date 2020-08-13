@@ -52,25 +52,6 @@ margin-right:20px
 ## Hope you enjoy your read.
 ## Dont be afraid to fail!!!
 
-{{ site.time | date_to_long_string }}
-<div class="pad">
-{% if site.github_username %}
-    <a href="https://github.com/{{ site.github_username }}">
-      <i class="fa fa-github"></i> GitHub
-    </a>
-{% endif %}
-{% if site.linkedin_username %}
-    <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
-      <i class="fa fa-linkedin"></i> LinkedIn
-    </a>
-{% endif %}
-{% if site.google_plus_username %}
-    <a href="https://plus.google.com/{{ site.google_plus_username }}">
-    <i class="fa fa-google-plus"></i> Google+
-    </a>
-{% endif %}
-</div>
-
 <div></div>
 <div class="dropdown">
   <button class="dropbtn">Blogs</button>
@@ -91,4 +72,23 @@ margin-right:20px
     <a href="blogs/migrateRepoFromTfsToGithub.html">Migrate repository from TFS to Github</a>
     <a href="blogs/awsECSDocker.html">AWS ECS and Docker Quick Guide</a>
   </div>
+</div>
+
+{{ site.time | date_to_long_string }}
+<div class="pad">
+{% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}">
+      <i class="fa fa-github"></i> GitHub
+    </a>
+{% endif %}
+{% if site.linkedin_username %}
+    <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+      <i class="fa fa-linkedin"></i> LinkedIn
+    </a>
+{% endif %}
+{% if site.google_plus_username %}
+    <a href="https://plus.google.com/{{ site.google_plus_username }}">
+    <i class="fa fa-google-plus"></i> Google+
+    </a>
+{% endif %}
 </div>
