@@ -1,3 +1,3 @@
 # Blog
 Blog page!!
-[![Build Status](https://travis-ci.org/abhurtun/Blog.svg?branch=master)](https://travis-ci.org/abhurtun/Blog)
+![Jekyll site CI](https://github.com/abhurtun/Blog/workflows/Jekyll%20site%20CI/badge.svg)
