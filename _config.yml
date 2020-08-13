@@ -13,4 +13,4 @@ gems:
   - jekyll-feed
 logo: /img/logo.png
 feed:
-  path: "/Blog/feed.xml"
+  path: feed.xml
