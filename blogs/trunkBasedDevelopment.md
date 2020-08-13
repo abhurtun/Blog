@@ -5,8 +5,9 @@ subtitle:
 date: March 06, 2019
 author: Arvin Bhurtun
 ---
-{% seo %}
 {% feed_meta %}
+{% seo %}
+
 
 # Trunk Based Development
 
