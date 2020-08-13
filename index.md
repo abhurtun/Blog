@@ -39,13 +39,13 @@ margin-right:20px
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 </style>
+{% feed_meta %}
 </head>
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 ![image-title-here](img/logo.png){:class="img-responsive"}
 {% seo %}
-{% feed_meta %}
 
 # Welcome
 
@@ -91,7 +91,7 @@ margin-right:20px
     <a href="blogs/migrateRepoFromTfsToGithub.html">Migrate repository from TFS to Github</a>
     <a href="blogs/awsECSDocker.html">AWS ECS and Docker Quick Guide</a>
   </div>
+</div>
   <div>
   <a class="btn btn-rss" href="/feed.xml" target="_blank">RSS</a>
-  </div>
 </div>
