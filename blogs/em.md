@@ -7,7 +7,7 @@ author: Arvin bhurtun
 ---
 {% seo %}
 
-# Things to consider in becoming an Engineering Manager
+# Becoming an Engineering Manager
 
 Understand if this is the right path for you
 
