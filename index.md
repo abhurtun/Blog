@@ -63,7 +63,7 @@ margin-right:20px
     <a href="blogs/awsSamNetCore.html">AWS SAM .Net Core</a>
     <a href="blogs/aspnetCoreAwsLambdaServerless.html">Aspnet-core Aws-lambda Serverless</a>
     <a href="blogs/dockerFundamentals.html">Docker tutorial</a>
-    <a href="blogs/enzymeTDD.html<">Quick Enzyme TDD</a>
+    <a href="blogs/enzymeTDD.html">Quick Enzyme TDD</a>
     <a href="blogs/jestTDD.html">Quick Jest TDD</a>
     <a href="blogs/jestVSmocha.html">Jest vs Mocha</a>
     <a href="blogs/keepingSecrets.html">Keeping Secrets</a>
