@@ -73,6 +73,7 @@ margin-right:20px
     <a href="blogs/awsECSDocker.html">AWS ECS and Docker Quick Guide</a>
     <a href="blogs/1-1.html">The 1-1s</a>
     <a href="blogs/em.html">The Engineering Manager</a>
+    <a href="blogs/juniorMidSenior.html">Junior Mid Senior Developers</a>
   </div>
 </div>
 
