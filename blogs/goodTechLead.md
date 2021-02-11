@@ -7,9 +7,7 @@ author: Arvin bhurtun
 ---
 {% seo %}
 
-
 # Tips to become an awesome Technical Lead
-
 
 {{ page.date | date_to_string }} {% include readTime.html %}
 

@@ -9,6 +9,10 @@ author: Arvin bhurtun
 
 # Becoming an Engineering Manager
 
+{{ page.date | date_to_string }} {% include readTime.html %}
+
+{% include likeButton.html %}
+
 Understand if this is the right path for you
 
 - You have mastered the technical skills required for your role 

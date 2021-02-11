@@ -9,6 +9,10 @@ author: Arvin bhurtun
 
 ## 6 Indicators
 
+{{ page.date | date_to_string }} {% include readTime.html %}
+
+{% include likeButton.html %}
+
 A lot of organizations claim to be DevOps-focused because they use specific tools and loosely follow certain practices. But in reality to really be a DevOps-centric organization, there are specific DevOps principles and [processes](https://devops.com/?s=processes) that ensure your organization is as optimized and automated as possible. To ensure that you’re not just using the DevOps title without following the underlying principles as an organization, here are six signs you’re actually doing it right.
 
 ### Deployment Is Fully Automated

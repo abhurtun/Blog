@@ -7,7 +7,6 @@ author: Arvin bhurtun
 ---
 {% seo %}
 
-
 # React + enzyme + Mocha TDD
 
 {{ page.date | date_to_string }} {% include readTime.html %}

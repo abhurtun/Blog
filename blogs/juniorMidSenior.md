@@ -10,6 +10,10 @@ author: Arvin bhurtun
 
 # The differences between a junior, mid-level, and senior developer
 
+{{ page.date | date_to_string }} {% include readTime.html %}
+
+{% include likeButton.html %}
+
 Years of experience of a developer are not the only indicator for ranking a junior, mid-level, or senior developer. This does not mean that a senior developer has to be a master in all areas of software development, but it is quite accurate to claim that an advanced developer is much more skilled than a junior or mid-level developer.
 
 Lets looks at those skill differences.

@@ -13,6 +13,8 @@ author: Arvin Bhurtun
 
 {{ page.date | date_to_string }} {% include readTime.html %}
 
+{% include likeButton.html %}
+
 Every time there is talk about trunk-based development or developing in master, people have are hesitant, resistant and find the whole idea weird or that you are a "cowboy". Mainly it’s because they think I’m saying that they’re wrong. This is one of my favorite topics as it's a prerequisite for continuos delivery. It simplifies code pushes and improves the frequency of deployments. Until I tried it, I didn’t get why trunk-based development was a good thing. Or that I shouldn’t be afraid of pushing code directly to the master branch without a pull/merge request. That’s why I want to share my experience as to why you need this practice in your teams. My reasons to use trunk-based development are listed below. That said am i no means suggesting that all other ways are wrong. There might be clear business or legacy reasons why you would adopt a different approach for example feature branching.
 
 ## Trunk-Based Development
