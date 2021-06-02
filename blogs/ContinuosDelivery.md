@@ -56,15 +56,15 @@ There are five principles at the heart of continuous delivery:
 
 ## OKRs
 
-|Pillars|Goals (Lag Measures)|<p>Key Result (Lead Measures)</p><p></p>|
+| Pillars | Goals (Lag Measures) | Key Result (Lead Measures) |
 | :- | :- | :- |
-|<p>Culture</p><p></p>|Frequent releases & Ownership|<p>- Lean release process limit manual steps</p><p>- Review branching strategy</p><p>- Feature toggling/Experimentation</p><p></p>|
-||Knowledge sharing|<p>- Infrastructure as code with Kubernetes and Docker</p><p>- Communication between teams</p>|
-|<p>Continuous Improvement</p><p></p>|Slice of cake|<p>- Small user stories</p><p>- Avoid spilling stories over sprints</p><p></p>|
-||Scalable Architecture|<p>- Spike early </p><p>- POCs Clear Outcomes</p><p>- Define MVP</p><p>- Deliver in iterations</p>|
-|Quality|Fail Fast|<p>- Increase and monitor test coverage</p><p>- Committing code frequently</p><p>- Production-like environments with docker</p>|
-||Automated QA|<p>- Reduce manual testing</p><p>- Feedback loop with development</p><p>- Automation test written by the whole team</p>|
-|<p>Customer Value</p><p></p>|<p>Fully automated deployments</p><p></p>|<p>- Review data migrations</p><p>- “One-click” promotion to production</p>|
+| Culture |Frequent releases & Ownership| - Lean release process limit manual steps - Review branching strategy - Feature toggling/Experimentation |
+||Knowledge sharing| - Infrastructure as code with Kubernetes and Docker  - Communication between teams |
+| Continuous Improvement   |Slice of cake| - Small user stories  - Avoid spilling stories over sprints   |
+||Scalable Architecture| - Spike early   - POCs Clear Outcomes  - Define MVP  - Deliver in iterations |
+|Quality|Fail Fast| - Increase and monitor test coverage  - Committing code frequently  - Production-like environments with docker |
+||Automated QA| - Reduce manual testing  - Feedback loop with development  - Automation test written by the whole team |
+| Customer Value   | Fully automated deployments   | - Review data migrations  - “One-click” promotion to production |
 ||Measure success|- Define measurable metrics|
 
 ---
