@@ -58,14 +58,14 @@ There are five principles at the heart of continuous delivery:
 
 | Pillars | Goals (Lag Measures) | Key Result (Lead Measures) |
 | :- | :- | :- |
-| Culture |Frequent releases & Ownership| - Lean release process limit manual steps - Review branching strategy - Feature toggling/Experimentation |
-||Knowledge sharing| - Infrastructure as code with Kubernetes and Docker  - Communication between teams |
-| Continuous Improvement   |Slice of cake| - Small user stories  - Avoid spilling stories over sprints   |
-||Scalable Architecture| - Spike early   - POCs Clear Outcomes  - Define MVP  - Deliver in iterations |
-|Quality|Fail Fast| - Increase and monitor test coverage  - Committing code frequently  - Production-like environments with docker |
-||Automated QA| - Reduce manual testing  - Feedback loop with development  - Automation test written by the whole team |
-| Customer Value   | Fully automated deployments   | - Review data migrations  - “One-click” promotion to production |
-||Measure success|- Define measurable metrics|
+| Culture |Frequent releases & Ownership| Lean release process limit manual steps <br> Review branching strategy <br> Feature toggling/Experimentation |
+||Knowledge sharing| <br> Infrastructure as code with Kubernetes and Docker  <br> Communication between teams |
+| Continuous Improvement   |Slice of cake| <br> Small user stories  <br> Avoid spilling stories over sprints   |
+||Scalable Architecture| <br> Spike early   <br> POCs Clear Outcomes  <br> Define MVP  <br> Deliver in iterations |
+|Quality|Fail Fast| <br> Increase and monitor test coverage  <br> Committing code frequently  <br> Production<br>like environments with docker |
+||Automated QA| <br> Reduce manual testing  <br> Feedback loop with development  <br> Automation test written by the whole team |
+| Customer Value   | Fully automated deployments   | <br> Review data migrations  <br> “One<br>click” promotion to production |
+||Measure success|<br> Define measurable metrics|
 
 ---
 
