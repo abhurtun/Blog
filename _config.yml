@@ -1,10 +1,11 @@
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
 title: Arvin Bhurtun
 baseurl: "/Blog"
 github_username:      abhurtun
 linkedin_username:    arvin-bhurtun-45001526
 google_plus_username: 106251512845632471589
 plugins:
+  - jekyll-remote-theme
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
