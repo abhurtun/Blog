@@ -24,7 +24,7 @@ There is not pattern to surface or save the metadata info for datapoints
 The best way to avoid dependency is not to have them in the first place!
 
 ---
-![flow](../img/BIM-Flow.drawio.png)
+![flow](../img/BIM-process-Flow.png)
 
 ---
 ### Appendix
