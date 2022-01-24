@@ -28,4 +28,13 @@ The best way to avoid dependency is not to have them in the first place!
 
 ---
 ### Appendix
+
+#### Roles
+
+The **Research Lead** in each CFT is responsible for advocating for and owning the entire spectrum of research requirements, including that we use the correct terminology, rules and relationships for the data entities we create.
+
+The **Product Lead** is responsible for gathering user and research requirements from stakeholders and is accountable for the final definition of and prioritsation of all requirements that will move to the design and technology leads.
+
+#### Examples
+
 ![appendix](../img/BIM-process-Appendix.jpg)
