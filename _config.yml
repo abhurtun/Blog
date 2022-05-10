@@ -9,16 +9,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Arvin Bhurtun # add your name
 author-img: me.jpg # add your photo
-about-author: > 
-  I am a tech enthusiast who is passionate about solving problems. Always hungry to keep learning. 
-  
-  I'm a Husband, Father, Developer, Engineering Manager and Teacher!
-  
-  🔭 I’m currently working as an engineering manger building high performing team!
-  🌱 I’m currently learning everything 🤣
-  🥅 Goals: Don't be afraid to fail
-  ⚡ Fun fact: I love to play badminton, football and am a big foody!# add description
-social-twitter: # add your Twitter handle
+about-author: I am a tech enthusiast who is passionate about solving problems. Always hungry to keep learning. 
 social-facebook:  # add your Facebook handle
 social-github: abhurtun # add your Github handle
 social-linkedin: arvin-bhurtun-45001526 # add your Linkedin handle
