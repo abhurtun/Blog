@@ -3,7 +3,7 @@ layout: post
 title: Engineering-Organisation
 date: 2023-03-14
 description: To scale an engineering organization, it helps to have a engineering organizational structure that encourages autonomy and collaboration. # Add post description (optional)
-img: org.png # Add image post (optional)
+img: org.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Engineering,Org] # add tag
 ---

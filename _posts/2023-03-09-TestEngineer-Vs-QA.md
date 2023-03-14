@@ -3,7 +3,7 @@ layout: post
 title: TestEngineer-Vs-QA
 date: 2023-03-14
 description: QA Engineers vs Software Testers. # Add post description (optional)
-img: qa.png # Add image post (optional)
+img: qa.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [QA,Engineering,Tester] # add tag
 ---
